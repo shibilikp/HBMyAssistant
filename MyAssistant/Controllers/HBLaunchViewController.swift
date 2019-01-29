@@ -20,7 +20,7 @@ class HBLaunchViewController: UIViewController {
     }
     
     fileprivate func animateLottie() {
-        animatedView.setAnimation(named: "loading_book")
+        animatedView.setAnimation(named: "loading_books")
         animatedView.loopAnimation = true
         animatedView.transform = .identity
         
