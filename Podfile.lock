@@ -1,0 +1,33 @@
+PODS:
+  - Eureka (3.0.0)
+  - lottie-ios (2.5.2)
+  - ObjectMapper (3.3.0)
+
+DEPENDENCIES:
+  - Eureka (from `https://github.com/xmartlabs/Eureka.git`, branch `feature/Xcode9-Swift3_2`)
+  - lottie-ios
+  - ObjectMapper
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - lottie-ios
+    - ObjectMapper
+
+EXTERNAL SOURCES:
+  Eureka:
+    :branch: feature/Xcode9-Swift3_2
+    :git: https://github.com/xmartlabs/Eureka.git
+
+CHECKOUT OPTIONS:
+  Eureka:
+    :commit: 05acfb04c24a480f1868e671d19b39e0f22fc265
+    :git: https://github.com/xmartlabs/Eureka.git
+
+SPEC CHECKSUMS:
+  Eureka: 5b9418d7bfdc21ca977d69d124a6409f3e9af2c7
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+
+PODFILE CHECKSUM: 54a95c2d3ea3005dd437c3ca6d2985fa08e274b1
+
+COCOAPODS: 1.5.3
