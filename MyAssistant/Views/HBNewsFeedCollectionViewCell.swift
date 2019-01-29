@@ -8,6 +8,4 @@
 
 import UIKit
 
-class HBNewsFeedCollectionViewCell: HBBaseReusableCollectionViewCell {
-    
-}
+class HBNewsFeedCollectionViewCell: HBBaseReusableCollectionViewCell {}

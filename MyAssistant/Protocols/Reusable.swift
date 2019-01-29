@@ -9,19 +9,14 @@
 import Foundation
 import UIKit
 
-protocol Reusable {
+protocol Reusable: class {
     /// Returns class name as identifier
     static var reusableIdentifier: String { get }
-    static var nib: UINib? { get }
 }
 
-extension Reusable {
+extension Reusable where Self: UIView {
     static var reusableIdentifier: String {
         return String(describing: self)
-    }
-    
-    static var nib: UINib? {
-        return UINib(nibName: "", bundle: nil)
     }
 }
 

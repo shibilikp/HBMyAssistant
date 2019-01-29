@@ -17,7 +17,7 @@ class HBNewsFeedViewController: UIViewController {
         super.viewDidLoad()
         
         // register
-        newsFeedCollectionView.registerReusableCell(HBNewsFeedCollectionViewCell.self)
+        newsFeedCollectionView.register(HBNewsFeedCollectionViewCell.self)
         newsFeedCollectionView.dataSource = self
         
         HBDataManager.shared.loadFromJsonFile(fileName: "Glossary", ofType: "json") { (result, error) in
@@ -37,7 +37,7 @@ extension HBNewsFeedViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = newsFeedCollectionView.dequeueReusableCell(withReuseIdentifier: "HBNewsFeedCollectionViewCell", for: indexPath) as? HBNewsFeedCollectionViewCell else { return UICollectionViewCell() }
+        let cell: HBNewsFeedCollectionViewCell = newsFeedCollectionView.dequeReusableCell(indexPath: indexPath as NSIndexPath)
         return cell
     }
 }
