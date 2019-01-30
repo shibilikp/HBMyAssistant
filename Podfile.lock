@@ -1,33 +1,40 @@
 PODS:
-  - Eureka (3.0.0)
+  - Eureka (4.3.1)
   - lottie-ios (2.5.2)
   - ObjectMapper (3.3.0)
+  - PromiseKit (6.8.1):
+    - PromiseKit/CorePromise (= 6.8.1)
+    - PromiseKit/Foundation (= 6.8.1)
+    - PromiseKit/UIKit (= 6.8.1)
+  - PromiseKit/CorePromise (6.8.1)
+  - PromiseKit/Foundation (6.8.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.1):
+    - PromiseKit/CorePromise
+  - SwiftyBeaver (1.6.1)
 
 DEPENDENCIES:
-  - Eureka (from `https://github.com/xmartlabs/Eureka.git`, branch `feature/Xcode9-Swift3_2`)
+  - Eureka
   - lottie-ios
   - ObjectMapper
+  - PromiseKit (~> 6.8)
+  - SwiftyBeaver
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Eureka
     - lottie-ios
     - ObjectMapper
-
-EXTERNAL SOURCES:
-  Eureka:
-    :branch: feature/Xcode9-Swift3_2
-    :git: https://github.com/xmartlabs/Eureka.git
-
-CHECKOUT OPTIONS:
-  Eureka:
-    :commit: 05acfb04c24a480f1868e671d19b39e0f22fc265
-    :git: https://github.com/xmartlabs/Eureka.git
+    - PromiseKit
+    - SwiftyBeaver
 
 SPEC CHECKSUMS:
-  Eureka: 5b9418d7bfdc21ca977d69d124a6409f3e9af2c7
+  Eureka: 28ea296f06710f6745266b71f17862048941a32d
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  PromiseKit: cd5df8e6553887c93cc009d1260cdf6f7efbcbbd
+  SwiftyBeaver: ccfcdf85a04d429f1633f668650b0ce8020bda3a
 
-PODFILE CHECKSUM: 54a95c2d3ea3005dd437c3ca6d2985fa08e274b1
+PODFILE CHECKSUM: f2e7d4d10e2086c193b8abea54902f0aea17d5fd
 
 COCOAPODS: 1.5.3

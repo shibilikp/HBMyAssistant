@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyBeaver
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // instantiate Swifty beawer
+        let console = ConsoleDestination()
+        SwiftyBeaver.addDestination(console)
+        
+        // example for Debug enabling using swift flags
+        #if DEBUG
+        SwiftyBeaver.info("Debug Enabled")
+        #else
+        SwiftyBeaver.debug("Debug Disabled")
+        #endif
+    
+        #if COCOAPOD
+        SwiftyBeaver.warning("Cocoapods")
+        #endif
+        
         return true
     }
 

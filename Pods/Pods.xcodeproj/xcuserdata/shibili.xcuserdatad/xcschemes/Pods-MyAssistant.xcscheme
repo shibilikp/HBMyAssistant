@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "10807CCB329246F8F873BDBEAD69E2A4"
+               BlueprintIdentifier = "453884C349B3D0B1978E7BCA757C7F4C"
                BuildableName = "Pods_MyAssistant.framework"
                BlueprintName = "Pods-MyAssistant"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "10807CCB329246F8F873BDBEAD69E2A4"
+            BlueprintIdentifier = "453884C349B3D0B1978E7BCA757C7F4C"
             BuildableName = "Pods_MyAssistant.framework"
             BlueprintName = "Pods-MyAssistant"
             ReferencedContainer = "container:Pods.xcodeproj">

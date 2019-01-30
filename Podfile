@@ -7,6 +7,8 @@ target 'MyAssistant' do
 
   pod 'lottie-ios'
   pod 'ObjectMapper'
-  pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'feature/Xcode9-Swift3_2'
+  pod 'Eureka'
+  pod 'PromiseKit', '~> 6.8'
+  pod 'SwiftyBeaver'
   
 end

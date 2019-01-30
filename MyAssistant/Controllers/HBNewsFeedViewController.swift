@@ -8,6 +8,8 @@
 
 import UIKit
 import ObjectMapper
+import SwiftyBeaver
+import PromiseKit
 
 class HBNewsFeedViewController: UIViewController {
     
@@ -19,14 +21,16 @@ class HBNewsFeedViewController: UIViewController {
         // register
         newsFeedCollectionView.register(HBNewsFeedCollectionViewCell.self)
         newsFeedCollectionView.dataSource = self
-        
-        HBDataManager.shared.loadFromJsonFile(fileName: "Glossary", ofType: "json") { (result, error) in
-            guard error == nil else {
-                print("error>>>>", error?.localizedDescription ?? "")
-                return
-            }
-            guard let result = result, let glossary = result["glossary"] as? [String: AnyObject] else { return }
-            let a = Mapper<HBGlossary>().map(JSON: glossary)
+       
+        loadDataSource()
+    }
+    
+    private func loadDataSource() {
+        HBAPIManager.shared.getGlossary().done { (glossaryItem) in
+            guard let glossaryTitle = glossaryItem.title else { return }
+            SwiftyBeaver.info(glossaryTitle)
+            } .catch { (error) in
+                SwiftyBeaver.error(error.localizedDescription)
         }
     }
 }
